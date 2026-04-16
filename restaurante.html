@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Prime Sabor</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1555992336-03a23c7b20ee');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 { font-size: 3.5rem; }
+
+    .menu-card {
+      border: none;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px 18px;
+      border-radius: 50px;
+      font-size: 18px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Experiência gastronômica única</h1>
+    <p>Sabores incríveis preparados com paixão</p>
+    <a href="#" class="btn btn-warning btn-lg mt-3">Ver Cardápio</a>
+  </div>
+</section>
+
+<!-- CARDÁPIO -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2 class="mb-5">Nosso Cardápio</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="menu-card">
+          <h5>Prato Especial</h5>
+          <p>Delicioso prato preparado pelo chef</p>
+          <strong>R$ 49,90</strong>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="menu-card">
+          <h5>Massas</h5>
+          <p>Receitas tradicionais italianas</p>
+          <strong>R$ 39,90</strong>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="menu-card">
+          <h5>Sobremesas</h5>
+          <p>Doces irresistíveis</p>
+          <strong>R$ 19,90</strong>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="bg-light py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1541542684-4a4b3c3a3a0a" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <h2>Sobre o Restaurante</h2>
+        <p>Oferecemos uma experiência gastronômica completa com ambiente aconchegante e pratos exclusivos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2>Clientes satisfeitos</h2>
+    <p>⭐⭐⭐⭐⭐ Comida incrível e atendimento excelente!</p>
+    <p>⭐⭐⭐⭐⭐ Melhor restaurante da cidade.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Reserve sua mesa agora</h2>
+  <a href="#" class="btn btn-light mt-3">Fazer Reserva</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-3">
+  <p>© 2026 Prime Sabor</p>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="#" class="whatsapp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
