@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Minha Loja</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+
+:root{
+    --primary:#2563eb;
+    --primary-hover:#1d4ed8;
+
+    --background:#f8fafc;
+    --surface:#ffffff;
+
+    --text:#1e293b;
+    --text-muted:#64748b;
+
+    --border:#e2e8f0;
+
+    --shadow:0 4px 20px rgba(0,0,0,.06);
+}
+
+body{
+    background:var(--background);
+    color:var(--text);
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* HEADER */
+
+.topbar{
+    background:white;
+    box-shadow:var(--shadow);
+}
+
+.logo{
+    font-size:1.6rem;
+    font-weight:700;
+}
+
+.logo span{
+    color:var(--primary);
+}
+
+.search-box{
+    position:relative;
+}
+
+.search-box input{
+    padding-left:45px;
+    border-radius:12px;
+}
+
+.search-box i{
+    position:absolute;
+    left:15px;
+    top:13px;
+    color:var(--text-muted);
+}
+
+.nav-icons a{
+    color:var(--text);
+    margin-left:20px;
+    font-size:1.2rem;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(
+        135deg,
+        #eff6ff,
+        #ffffff
+    );
+
+    border-radius:20px;
+    padding:80px 40px;
+    margin-top:30px;
+}
+
+.hero h1{
+    font-weight:700;
+}
+
+.hero p{
+    color:var(--text-muted);
+}
+
+.btn-shop{
+    background:var(--primary);
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+}
+
+.btn-shop:hover{
+    background:var(--primary-hover);
+}
+
+/* CATEGORIAS */
+
+.section-title{
+    font-size:1.6rem;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.category-card{
+    background:white;
+    border:none;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+    text-align:center;
+    padding:25px;
+    transition:.3s;
+}
+
+.category-card:hover{
+    transform:translateY(-5px);
+}
+
+.category-card i{
+    font-size:2rem;
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+/* PRODUTOS */
+
+.product-card{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    background:white;
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+}
+
+.product-img{
+    height:240px;
+    background:#e2e8f0;
+}
+
+.product-body{
+    padding:20px;
+}
+
+.price{
+    color:var(--primary);
+    font-size:1.4rem;
+    font-weight:700;
+}
+
+.old-price{
+    color:#94a3b8;
+    text-decoration:line-through;
+    margin-left:10px;
+}
+
+.btn-cart{
+    width:100%;
+    border-radius:10px;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:80px;
+    background:white;
+    border-top:1px solid var(--border);
+    padding:50px 0;
+}
+
+.footer-link{
+    text-decoration:none;
+    color:var(--text-muted);
+    display:block;
+    margin-bottom:10px;
+}
+
+</style>
+</head>
+<body>
+
+<header class="topbar py-3">
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-md-3">
+<div class="logo">
+MINHA<span>LOJA</span>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="search-box">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input type="text" class="form-control" placeholder="Buscar produtos">
+</div>
+</div>
+
+<div class="col-md-3 text-end nav-icons">
+<a href="#"><i class="fa-regular fa-heart"></i></a>
+<a href="#"><i class="fa-regular fa-user"></i></a>
+<a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+</div>
+
+</div>
+
+</div>
+</header>
+
+<div class="container">
+
+<section class="hero">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+<h1>Produtos modernos para o seu dia a dia</h1>
+
+<p>
+Design elegante, entrega rápida e preços justos.
+</p>
+
+<button class="btn-shop">
+Comprar agora
+</button>
+</div>
+
+</div>
+
+</section>
+
+<section class="mt-5">
+
+<h2 class="section-title">
+Categorias
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+<div class="category-card">
+<i class="fa-solid fa-laptop"></i>
+<h5>Tecnologia</h5>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="category-card">
+<i class="fa-solid fa-shirt"></i>
+<h5>Moda</h5>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="category-card">
+<i class="fa-solid fa-couch"></i>
+<h5>Casa</h5>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="category-card">
+<i class="fa-solid fa-dumbbell"></i>
+<h5>Esportes</h5>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="mt-5">
+
+<h2 class="section-title">
+Produtos em destaque
+</h2>
+
+<div class="row g-4">
+
+@for($i=1;$i<=8;$i++)
+
+<div class="col-lg-3 col-md-6">
+
+<div class="product-card">
+
+<div class="product-img"></div>
+
+<div class="product-body">
+
+<h5>Produto Exemplo</h5>
+
+<div class="mb-3">
+<span class="price">
+R$ 199,90
+</span>
+
+<span class="old-price">
+R$ 249,90
+</span>
+</div>
+
+<button class="btn btn-primary btn-cart">
+Adicionar ao carrinho
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+@endfor
+
+</div>
+
+</section>
+
+<section class="newsletter mt-5">
+
+<div class="row align-items-center">
+
+<div class="col-md-6">
+<h3>Receba novidades</h3>
+<p class="text-secondary mb-0">
+Promoções e lançamentos direto no seu e-mail.
+</p>
+</div>
+
+<div class="col-md-6">
+<div class="input-group">
+<input type="email" class="form-control">
+<button class="btn btn-primary">
+Cadastrar
+</button>
+</div>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-4">
+<h5>Minha Loja</h5>
+<p class="text-secondary">
+Sua loja online moderna.
+</p>
+</div>
+
+<div class="col-md-4">
+<h5>Institucional</h5>
+
+<a href="#" class="footer-link">Sobre</a>
+<a href="#" class="footer-link">Contato</a>
+<a href="#" class="footer-link">Política de Privacidade</a>
+</div>
+
+<div class="col-md-4">
+<h5>Atendimento</h5>
+
+<a href="#" class="footer-link">Minha Conta</a>
+<a href="#" class="footer-link">Pedidos</a>
+<a href="#" class="footer-link">Trocas e Devoluções</a>
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
